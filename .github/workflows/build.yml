@@ -14,6 +14,7 @@ jobs:
             -DRDK_BUILD_PYTHON_WRAPPERS=OFF \
             -DRDK_USE_BOOST_IOSTREAMS=OFF \
             -DRDK_USE_BOOST_SERIALIZATION=OFF \
-            -DRDK_USE_BOOST_STACKTRACE=OFF
+            -DRDK_USE_BOOST_STACKTRACE=OFF \
+            -DCMAKE_VERBOSE_MAKEFILE=ON
           cat build/CMakeCache.txt
           cmake --build build
