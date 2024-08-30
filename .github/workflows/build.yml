@@ -15,4 +15,5 @@ jobs:
             -DRDK_USE_BOOST_IOSTREAMS=OFF \
             -DRDK_USE_BOOST_SERIALIZATION=OFF \
             -DRDK_USE_BOOST_STACKTRACE=OFF
+          cat build/CMakeCache.txt
           cmake --build build
