@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: |
           brew install boost
-          git clone --recursive --branch Release_2024_03_6 https://github.com/rdkit/rdkit.git
+          git clone --recursive --branch Release_2024_03_5 https://github.com/rdkit/rdkit.git
           cd rdkit
           cmake -S . -B build \
             -DRDK_BUILD_COORDGEN_SUPPORT=OFF \
